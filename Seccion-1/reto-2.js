@@ -13,7 +13,7 @@ while(eleccion){
     
     let nomSouvenir = prompt("Ingresa el nombre del Souvenir: ")
     let costSouvenir = parseInt(prompt("Ingresa el costo del Souvenir: "))
-    let dispSouvenir = prompt("Ingresa la disponibilidad del Souvenir (Si/No): ").toLocaleUpperCase
+    let dispSouvenir = prompt("Ingresa la disponibilidad del Souvenir (Si/No): ").toLocaleUpperCase()
 
     if (dispSouvenir == "Si"){
         dispSouvenir = true
@@ -25,7 +25,7 @@ while(eleccion){
     let eleccion2 = confirm("Quieres ingresar otro souvenir?")
     
     if (eleccion2 == false){
-        console.log(souvenirs)
+        console.table(souvenirs)
         break
     }
 }
